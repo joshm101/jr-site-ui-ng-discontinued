@@ -1,0 +1,23 @@
+.select-image-button {
+  line-height: 37px;
+}
+
+.select-image-button label:hover {
+  cursor: pointer;
+}
+
+#select-image-file-input {
+  display: none;
+}
+
+.selected-images-previews {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.selected-images-previews img {
+  max-height: 150px;
+  width: auto;
+  margin: 10px;
+}

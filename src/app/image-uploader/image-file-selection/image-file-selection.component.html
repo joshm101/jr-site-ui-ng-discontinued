@@ -1,0 +1,17 @@
+<div>
+  <button mat-button class="select-image-button">
+    <label for="select-image-file-input">Select images...</label>
+  </button>
+  <input
+    id="select-image-file-input"
+    multiple
+    type="file"
+    (change)="fileSelectionEvent($event.target)"
+  />
+  <div class="selected-images-previews">
+    <img
+      *ngFor="let imageSource of imageSources"
+      [src]="imageSource"
+    />
+  </div>
+</div>
