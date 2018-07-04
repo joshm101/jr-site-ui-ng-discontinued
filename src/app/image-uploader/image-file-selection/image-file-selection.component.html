@@ -10,8 +10,8 @@
   />
   <div class="selected-images-previews">
     <img
-      *ngFor="let imageSource of imageSources"
-      [src]="imageSource"
+      *ngFor="let imagePreview of selectedImagePreviews$ | async"
+      [src]="imagePreview"
     />
   </div>
 </div>
